@@ -1,0 +1,422 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hi there",
+        "Hola",
+        "Is anyone there?",
+        "Hello there",
+        "Hya",
+        "Hya there",
+        "Good day"
+      ],
+      "responses": [
+        "Welcome to Innovatix! How can I assist you with your healthcare needs?",
+        "Hello! How can Innovatix help you with your healthcare today?",
+        "Hello and welcome to Innovatix! How can we support your healthcare journey today?",
+        "Greetings! How can Innovatix assist you today?"
+      ]
+    },
+    {
+      "tag": "GreetingResponse",
+      "patterns": [
+        "My user is",
+        "This is",
+        "I am",
+        "It is"
+      ],
+      "responses": [
+        "Great! Hi <HUMAN>! How can I help?",
+        "Good! Hi <HUMAN>!, how can I help you?",
+        "Cool! Hello <HUMAN>!, what can I do for you?",
+        "OK! Hola <HUMAN>!, how can I help you?",
+        "OK! hi <HUMAN>!, what can I do for you?"
+      ]
+    },
+    {
+      "tag": "CourtesyGreeting",
+      "patterns": [
+        "How are you?",
+        "Hi how are you?",
+        "Hello how are you?",
+        "Hola how are you?",
+        "How are you doing?",
+        "Hope you are doing well?",
+        "Hello hope you are doing well?"
+      ],
+      "responses": [
+        "Hello, I am great, how are you?",
+        "Hello, how are you? I am great thanks!",
+        "Hello, I am good thank you, how are you?",
+        "Hi, I am great, how are you?",
+        "Hi, how are you? I am great thanks!",
+        "Hi, I am good thank you, how are you?",
+        "Hi, good thank you, how are you?"
+      ]
+    },
+    {
+      "tag": "CourtesyGreetingResponse",
+      "patterns": [
+        "Good thanks! My user is",
+        "Good thanks! This is",
+        "Good thanks! I am",
+        "Good thanks! It is",
+        "Great thanks! My user is",
+        "Great thanks! This is",
+        "Great thanks! I am",
+        "Great thanks! It is"
+      ],
+      "responses": [
+        "Great! Hi <HUMAN>! How can I help?",
+        "Good! Hi <HUMAN>!, how can I help you?",
+        "Cool! Hello <HUMAN>!, what can I do for you?",
+        "OK! Hola <HUMAN>!, how can I help you?",
+        "OK! hi <HUMAN>!, what can I do for you?"
+      ]
+    },
+    {
+      "tag": "NameQuery",
+      "patterns": [
+        "What is your name?",
+        "What could I call you?",
+        "What can I call you?",
+        "What do your friends call you?",
+        "Who are you?",
+        "Tell me your name?"
+      ],
+      "responses": [
+        "You can call me innovatex",
+        "You may call me innovatex",
+        "Call me innovatex"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye"
+      ],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "small_talk",
+      "patterns": [
+        "Who created you?",
+        "What do you do for fun?",
+        "Tell me something random",
+        "Do you have a name?"
+      ],
+      "responses": [
+        "I was created by a team of developers and AI specialists!",
+        "I enjoy helping people with their questions!",
+        "Did you know that the longest word in English is 189,819 letters long?",
+        "My name is Innovatex, nice to meet you!"
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm sorry, I didn't understand that. Could you rephrase?",
+        "I’m not sure I know the answer to that. Can you ask me something else?",
+        "I didn't get that. Let's try something else!"
+      ]
+    },
+    {
+      "tag": "sick",
+      "patterns": [
+        "I feel sick",
+        "I am not good",
+        "I feel sad",
+        "I feel bad",
+        "I feel pain",
+        "I am not happy"
+      ],
+      "responses": [
+        "I'm sorry to hear that. Could you please describe your symptoms in more detail? For example, do you have a headache, cough, fever, etc.?"
+      ]
+    },
+    {
+      "tag": "emergency",
+      "patterns": [
+        "I feel severe pain",
+        "I can't breathe",
+        "I have chest pain",
+        "I'm having trouble breathing"
+      ],
+      "responses": [
+        "Please seek immediate medical attention. If you're experiencing severe symptoms, it's important to contact emergency services."
+      ]
+    },
+    {
+      "tag": "MedicationInformation",
+      "patterns": [
+        "What are the side effects of ibuprofen?",
+        "How do I take my medicine?",
+        "Can I take this medication on an empty stomach?",
+        "What is the dosage of paracetamol?"
+      ],
+      "responses": [
+        "Please consult a doctor for specific advice on medications, but common side effects of ibuprofen include nausea and dizziness.",
+        "It's important to follow the instructions given by your doctor or the medication label."
+      ]
+    },
+    {
+      "tag": "MentalHealth",
+      "patterns": [
+        "I feel anxious",
+        "How can I reduce stress?",
+        "I am feeling down",
+        "I need help with my mental health"
+      ],
+      "responses": [
+        "I'm sorry you're feeling this way. Practicing mindfulness and deep breathing can help with stress. If it persists, please seek professional support.",
+        "It sounds like you're going through a tough time. Would you like me to suggest relaxation techniques?"
+      ]
+    },
+    {
+      "tag": "common cold symptoms",
+      "patterns": [
+        "Runny or stuffy nose",
+        "Sore throat",
+        "Cough",
+        "Congestion",
+        "Slight body aches or a mild headache",
+        "Sneezing",
+        "Low-grade fever",
+        "Generally feeling unwell (malaise)"
+      ],
+      "responses": [
+        "It seems like you're suffering from a common cold. Make sure to rest, stay hydrated, and consider over-the-counter remedies like decongestants. If symptoms persist, consider seeing a doctor."
+      ]
+    },
+    {
+      "tag": "fever symptoms",
+      "patterns": [
+        "Sweating",
+        "Chills and shivering",
+        "Headache",
+        "Muscle aches",
+        "Loss of appetite",
+        "Irritability",
+        "Dehydration",
+        "General weakness"
+      ],
+      "responses": [
+        "It seems that you are suffering from fever"
+      ]
+    },
+    {
+      "tag": "diabetes_symptoms",
+      "patterns": [
+        "I have frequent thirst",
+        "I feel thirsty all the time",
+        "I am feeling blurred vision",
+        "My vision is blurry",
+        "I am peeing a lot",
+        "I feel fatigued often",
+        "I have diabetes symptoms",
+        "I'm losing weight unexpectedly"
+      ],
+      "responses": [
+        "These symptoms might indicate diabetes. You should consult a doctor for proper diagnosis."
+      ]
+    },
+    {
+      "tag": "depression_symptoms",
+      "patterns": [
+        "I feel down",
+        "I'm under the weather",
+        "I have trouble sleeping",
+        "I can't sleep",
+        "I lack energy",
+        "I'm feeling hopeless",
+        "I am depressed",
+        "I feel sad all the time",
+        "I can't enjoy things"
+      ],
+      "responses": [
+        "It sounds like you may be experiencing symptoms of depression. Please consider reaching out to a healthcare professional."
+      ]
+    },
+    {
+      "tag": "Asthma symptoms",
+      "patterns": [
+        "coughing",
+        "tightness in the chest",
+        "shortness of breath",
+        "difficulty talking",
+        "panic",
+        "fatigue"
+      ],
+      "responses": [
+        "It seem that you are suffering from Asthma"
+      ]
+    },
+    {
+      "tag": "preventive_measures",
+      "patterns": [
+        "How can I prevent diabetes?",
+        "What can I do to avoid heart disease?",
+        "How do I prevent getting sick?"
+      ],
+      "responses": [
+        "To reduce the risk of diabetes, maintain a healthy diet, exercise regularly, and avoid smoking.",
+        "You can prevent heart disease by eating a balanced diet, staying physically active, and managing stress.",
+        "Make sure to wash your hands regularly, maintain a healthy lifestyle, and stay hydrated to avoid common illnesses."
+      ]
+    },
+    {
+      "tag": "common cold prevention",
+      "patterns": [
+        "What medicines can I buy to help me with my common cold?",
+        "tell me some prevention method from common cold",
+        "What should I eat or drink if i am suffering from common cold?",
+        "How can I keep from getting a cold or the flu?"
+      ],
+      "responses": [
+        "medicines you can consume : Dextromethorphan,Decongestant,Diphenhydramine,Crocin Cold & Flu Max, preventions that you must follow :Wash your hands,Avoid touching your face,Clean frequently used surfaces,Use hand sanitizers,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"
+      ]
+    },
+    {
+      "tag": "fever prevention",
+      "patterns": [
+        "What medicines can I buy to help me with my fever?",
+        "tell me some prevention method from fever",
+        "What should I eat or drink if i am suffering from fever?",
+        "How can I keep from getting a fever?"
+      ],
+      "responses": [
+        "medicines you can consume : acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max, prevention that you must follow :Wash your hands,Cover your mouth when you cough and your nose when you sneeze,Clean frequently used surfaces,Avoid sharing cups, glasses, and eating utensils with other people.,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"
+      ]
+    },
+    {
+      "tag": "diabetes prevention",
+      "patterns": [
+        "What medicines can I buy to help me with my diabetes?",
+        "tell me some prevention method from diabetes",
+        "What should I eat or drink if i am suffering from diabetes?",
+        "How can I keep from getting diabetes?"
+      ],
+      "responses": [
+        "medicines you can consume : Insulin ,Amylinomimetic drug,Dipeptidyl peptidase-4 (DPP-4) inhibitor, prevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You’re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet,Watch Portion Sizes,SUGGESTED FOODS ARE:Leafy greens,Avocados,Eggs"
+      ]
+    },
+    {
+      "tag": "depression prevention",
+      "patterns": [
+        "What medicines can I buy to help me with my depression?",
+        "tell me some prevention method from depression",
+        "What should I eat or drink if i am suffering from depression?",
+        "How can I keep from getting depression?"
+      ],
+      "responses": [
+        "medicines you can consume :  brexpiprazole, quetiapine,olanzapine, prevention that you must follow :Exercise regularly,Cut back on social media time,Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet,SUGGESTED FOODS ARE:Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"
+      ]
+    },
+    {
+      "tag": "asthma prevention",
+      "patterns": [
+        "What medicines can I buy to help me with my asthma?",
+        "tell me some prevention method from asthma",
+        "What should I eat or drink if i am suffering from asthma?",
+        "How can I keep from getting asthma?"
+      ],
+      "responses": [
+        "medicines you can consume : epinephrine,anticholinergic,Proair HFA, prevention that you must follow : Identify Asthma Triggers, Stay Away From Allergens,Avoid Smoke of Any Type,SUGGESTED FOODS ARE:carrots,juice,eggs,broccoli,cantaloupe,milk"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!",
+        "OK thank you",
+        "OK thanks",
+        "OK"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure",
+        "No problem!"
+      ]
+    },
+    {
+      "tag": "UnderstandQuery",
+      "patterns": [
+        "Do you understand what I am saying",
+        "Do you understand me",
+        "Do you know what I am saying",
+        "Do you get me",
+        "Comprendo",
+        "Know what I mean"
+      ],
+      "responses": [
+        "Well I would not be a very clever AI if I did not would I?",
+        "I read you loud and clear!",
+        "I do indeed!"
+      ]
+    },
+    {
+      "tag": "innovate",
+      "patterns": [
+        "app",
+        "application",
+        "about you"
+      ],
+      "responses": [
+        "Innovatex is an application similar to vezeeta but powered with Ai features",
+        "Innovatex combines AI technology with healthcare services, offering a user-friendly experience akin to Vezeeta.",
+        "Innovatex leverages AI to deliver healthcare services, making it a smart alternative to Vezeeta"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    }
+  ]
+}
