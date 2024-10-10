@@ -1,6 +1,6 @@
 # Medical Chatbot
 
-This repository contains the AI components for a medical chatbot that helps patients detect their diseases based on given symptoms. The chatbot combines two models: one for friendly chat, created using a simple neural network (NN), and another for predicting diseases, built using a pretrained BERT model.
+This repository contains the AI components for a medical chatbot on a web application that helps patients detect their diseases based on given symptoms. The chatbot combines two models: one for friendly chat, created using a simple neural network (NN), and another for predicting diseases, built using a pretrained BERT model.
 
 ## Deployment Options
 
