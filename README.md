@@ -1,4 +1,4 @@
-# AI Team
+# Medical Chatbot
 
 This repository contains the AI components for a medical chatbot that helps patients detect their diseases based on given symptoms. The chatbot combines two models: one for friendly chat, created using a simple neural network (NN), and another for predicting diseases, built using a pretrained BERT model.
 
@@ -41,7 +41,7 @@ This repository is divided into two parts:
 
 #### Training and Testing
 
-* **Run the Notebook** you will find the notebooke for the model in bert model folder. Just run it in kaggle and download the model and it's tokenizer to use it 
+* **Run the Notebook** you will find the notebooke for the model in bert model folder. Just run it in kaggle and download the model and it's tokenizer to use it
 * **Test the BERT model:**
 
 ```bash
@@ -82,20 +82,21 @@ This repository is divided into two parts:
 ```bash
   $ (venv) python app.py
 ```
+
   This command runs the main file, which contains the Flask API to run the app.
 
-
 ## Using Docker
+
 1. Build the Docker image:
- 
- ```bash
+
+```bash
   docker build -t chatbot-app .
 
 ```
 
 2. Run the Docker container:
- 
- ```bash
+
+```bash
  docker run -d -p 5000:5000 chatbot-app
 
 ```
